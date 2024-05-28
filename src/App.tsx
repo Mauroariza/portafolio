@@ -1,9 +1,18 @@
 import { useState } from 'react'
 import './App.css'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+     <Router>
+      <nav>
+        <ul className="flex space-x-4">
+          <li><Link to="/MiHistoria">Mi Historia</Link></li>
+          <li><Link to="/MiPasion">Mi Pasión</Link></li>
+        </ul>
+      </nav>
+    </Router>
       <header className="bg-gradient-to-r from-blue-600 to-blue-500 p-6">
         <h1 className="text-4xl font-bold tracking-wide">Mi Portafolio</h1>
       </header>
